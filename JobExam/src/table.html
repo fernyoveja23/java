@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        <script>
+            function validar(){
+                var value = document.getElementById("verificar").value; 
+                if(value == "" || value == null){
+                    alert("campo vacio");
+                }
+            }        
+        </script>
+        <style>
+            table {
+                background-color: red;
+            }
+        </style>
+        <input type="text" id="verificar"/>
+        <button onclick="validar();" >Verifica</button>
+        <table style="border: solid">
+            <tr>
+                <td style="border: solid;width: 50px">
+                   A 
+                </td>
+                <td rowspan="2" style="border: solid; width: 100px">
+                   C
+                </td>
+            </tr>
+            <tr>
+                <td style="border: solid">
+                    B
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
